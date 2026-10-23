@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.formulario,
+.lista {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1d4ed8;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.produto {
+    background: #eff6ff;
+    padding: 15px;
+    margin-top: 12px;
+    border-left: 4px solid #1d4ed8;
+    border-radius: 6px;
+}
+
+.produto h3 {
+    margin-bottom: 8px;
+}
+
+.produto p {
+    margin-top: 5px;
+}
+
+#total {
+    margin-bottom: 15px;
+}
+
+.sucesso {
+    color: #15803d;
+    margin-top: 15px;
+}
+
+.erro {
+    color: #b91c1c;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .formulario,
+    .lista {
+        flex: 1;
+        min-width: 0;
+    }
+}
